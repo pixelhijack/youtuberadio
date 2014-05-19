@@ -1,1 +1,48 @@
-<div class="row"><div class="col-12-12"><form ng-submit="searchYoutube(youtubesearchkeyword)"><input placeholder="search youtube!" type="text" ng-model="youtubesearchkeyword" name="text" class="search"></form></div></div><div class="row"><div class="suggested"><div class="video" ng-repeat="video in suggested"><a ng-href="#/{{video.videoid}}"><img src="http://img.youtube.com/vi/{{video.videoid}}/default.jpg" alt="{{video.artist}} - {{video.title}}"> <span>{{video.artist}} - {{video.title}}</span></a></div></div><div class="stage"><iframe id="player" width="853" height="480" src="http://www.youtube.com/embed/Pv7Es_V9zXE?autoplay=1&playlist=79YDgv_zWA4,4N31oFeinFY,hT_nvWreIhg" frameborder="0" allowfullscreen></iframe><span class="similar" ng-repeat="sim in similar" ng-click="searchYoutube(sim.artist)">{{sim.artist}}</span></div><div class="playlist"><div class="video" ng-repeat="video in playlist"><a ng-href="#/{{video.videoid}}"><img src="http://img.youtube.com/vi/{{video.videoid}}/default.jpg" alt="{{video.artist}} - {{video.title}}"> <span>{{video.artist}} - {{video.title}}</span></a></div></div></div>
+<div class="row">
+    <div class="col-12-12">
+        <form ng-submit="searchYoutube(youtubesearchkeyword)">
+            <input placeholder="search youtube!" 
+                   type="text" 
+                   ng-model="youtubesearchkeyword" 
+                   name="text"
+                   class="search" />
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="suggested">
+        <div class="video"
+             ng-repeat="video in suggested">
+             <a ng-href="#/{{video.videoid}}">
+                 <img src="http://img.youtube.com/vi/{{video.videoid}}/default.jpg" 
+                      alt="{{video.artist}} - {{video.title}}">
+                 <span>{{video.artist}} - {{video.title}}</span>
+             </a>
+         </div>
+    </div>
+    <div class="stage">
+        <iframe 
+            id="player"
+            width="853" 
+            height="480" 
+            src="http://www.youtube.com/embed/Pv7Es_V9zXE?autoplay=1&playlist=79YDgv_zWA4,4N31oFeinFY,hT_nvWreIhg" 
+            frameborder="0" allowfullscreen>
+        </iframe>
+    
+        <span class="similar"
+              ng-repeat="sim in similar" 
+              ng-click="searchYoutube(sim.artist)">
+            {{sim.artist}} 
+        </span>
+    </div>
+    <div class="playlist">
+        <div class="video"
+             ng-repeat="video in playlist">
+             <a ng-href="#/{{video.videoid}}">
+                 <img src="http://img.youtube.com/vi/{{video.videoid}}/default.jpg" 
+                      alt="{{video.artist}} - {{video.title}}">
+                 <span>{{video.artist}} - {{video.title}}</span>
+             </a>
+         </div>
+    </div>
+</div>

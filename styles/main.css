@@ -1,0 +1,702 @@
+/*==============================
+	COLORS
+================================*/
+/*---------------------------
+	placeholders
+---------------------------*/
+/*---------------------------
+	mixins
+---------------------------*/
+/*---------------------------
+	@keyframes animations
+---------------------------*/
+@-webkit-keyframes popIn {
+  /* line 88, ../../app/styles/_variables.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+  }
+
+  /* line 93, ../../app/styles/_variables.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes popIn {
+  /* line 100, ../../app/styles/_variables.scss */
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  /* line 105, ../../app/styles/_variables.scss */
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  /* line 113, ../../app/styles/_variables.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%);
+  }
+
+  /* line 119, ../../app/styles/_variables.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  /* line 126, ../../app/styles/_variables.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+    transform: translateX(200%);
+  }
+
+  /* line 133, ../../app/styles/_variables.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInDown {
+  /* line 141, ../../app/styles/_variables.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  /* line 147, ../../app/styles/_variables.scss */
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  /* line 154, ../../app/styles/_variables.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-200%);
+    -ms-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  /* line 161, ../../app/styles/_variables.scss */
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideInLeft {
+  /* line 169, ../../app/styles/_variables.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+
+  /* line 175, ../../app/styles/_variables.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/*==============================
+	put here anything that need to be 
+	overriden (opencart, C5, etc)
+================================*/
+/*---------------------------
+	BORDERS & PADDINGS
+---------------------------*/
+/* line 5, ../../app/styles/_grid.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*---------------------------
+	CLEARFIX
+---------------------------*/
+/* line 16, ../../app/styles/_grid.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 20, ../../app/styles/_grid.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 21, ../../app/styles/_grid.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/*---------------------------
+	GRID
+---------------------------*/
+/* line 27, ../../app/styles/_grid.scss */
+.row {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  float: left;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 37, ../../app/styles/_grid.scss */
+.row:after,
+.row:before {
+  content: " ";
+  display: table;
+}
+
+/* line 41, ../../app/styles/_grid.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 59, ../../app/styles/_grid.scss */
+.col-12-12,
+.col-11-12,
+.col-10-12,
+.col-9-12,
+.col-8-12,
+.col-7-12,
+.col-6-12,
+.col-5-12,
+.col-4-12,
+.col-3-12,
+.col-2-12,
+.col-1-12,
+.col-1-5,
+.col-2-5,
+.col-3-5,
+.col-4-5,
+.col-5-5 {
+  float: left;
+  margin: 0 1.041666%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* line 65, ../../app/styles/_grid.scss */
+.col-12-12 {
+  width: 97.916%;
+}
+
+/* line 66, ../../app/styles/_grid.scss */
+.col-11-12 {
+  width: 89.583333%;
+}
+
+/* line 67, ../../app/styles/_grid.scss */
+.col-10-12 {
+  width: 81.25%;
+}
+
+/* line 68, ../../app/styles/_grid.scss */
+.col-9-12 {
+  width: 72.916%;
+}
+
+/* line 69, ../../app/styles/_grid.scss */
+.col-8-12 {
+  width: 64.583%;
+}
+
+/* line 70, ../../app/styles/_grid.scss */
+.col-7-12 {
+  width: 56.25%;
+}
+
+/* line 71, ../../app/styles/_grid.scss */
+.col-6-12 {
+  width: 47.916%;
+}
+
+/* line 72, ../../app/styles/_grid.scss */
+.col-5-12 {
+  width: 39.583%;
+}
+
+/* line 73, ../../app/styles/_grid.scss */
+.col-4-12 {
+  width: 31.25%;
+}
+
+/* line 74, ../../app/styles/_grid.scss */
+.col-3-12 {
+  width: 22.916%;
+}
+
+/* line 75, ../../app/styles/_grid.scss */
+.col-2-12 {
+  width: 14.583%;
+}
+
+/* line 76, ../../app/styles/_grid.scss */
+.col-1-12 {
+  width: 6.25%;
+}
+
+/* line 78, ../../app/styles/_grid.scss */
+.col-1-5 {
+  width: 17.916666666%;
+}
+
+/* line 79, ../../app/styles/_grid.scss */
+.col-2-5 {
+  width: 37.916666666%;
+}
+
+/* line 80, ../../app/styles/_grid.scss */
+.col-3-5 {
+  width: 57.916666666%;
+}
+
+/* line 81, ../../app/styles/_grid.scss */
+.col-4-5 {
+  width: 77.916666666%;
+}
+
+/* line 82, ../../app/styles/_grid.scss */
+.col-5-5 {
+  width: 97.916%;
+}
+
+/* line 85, ../../app/styles/_grid.scss */
+.inline {
+  float: left;
+  display: inline-block;
+}
+
+/*---------------------------
+	FLUID LAYOUT
+---------------------------*/
+/* line 94, ../../app/styles/_grid.scss */
+.container {
+  max-width: 1280px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: white;
+}
+
+/*======================================
+	BODY FONT STACK 
+	for everything from linux to android
+========================================*/
+/* line 5, ../../app/styles/_typo.scss */
+body {
+  font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+}
+
+/*==============================
+	LINKS
+================================*/
+/* line 11, ../../app/styles/_typo.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 15, ../../app/styles/_typo.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*==============================
+	HEADINGS
+================================*/
+/* line 22, ../../app/styles/_typo.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 27, ../../app/styles/_typo.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 32, ../../app/styles/_typo.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 37, ../../app/styles/_typo.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 42, ../../app/styles/_typo.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 47, ../../app/styles/_typo.scss */
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+/* ::-webkit-scrollbar {
+        width: 4px;
+    }
+     
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+        border-radius: 2px;
+    }
+     
+    ::-webkit-scrollbar-thumb {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        border-radius: 2px;
+    }
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background: rgba(0,0,0,0.9); 
+    }
+    input:focus::-webkit-input-placeholder { 
+        color:transparent; 
+        -webkit-transition:color .2s linear;
+        }
+    input:focus:-moz-placeholder { 
+        color:transparent; 
+        transition:color .2s linear;
+        } */
+/*==========================
+    GENERAL MODAL DIRECTIVE
+===========================*/
+/* line 5, ../../app/styles/_modal.scss */
+.ng-modal-overlay {
+  /* A dark translucent div that covers the whole screen */
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.8;
+}
+
+/* line 16, ../../app/styles/_modal.scss */
+.ng-modal-dialog {
+  /* A centered div above the overlay with a box shadow. */
+  z-index: 10000;
+  position: absolute;
+  width: 50%;
+  /* Default */
+  display: table;
+  color: black;
+  /* Center the dialog */
+  top: 33%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  box-shadow: 4px 4px 80px #fa9802;
+  border: 1px solid white;
+  -webkit-animation: fadeIn 1s normal forwards ease-in;
+  -moz-animation: fadeIn 1s normal forwards ease-in;
+  animation: fadeIn 1s normal forwards ease-in;
+}
+
+/* line 37, ../../app/styles/_modal.scss */
+.lt-ie9 .ng-modal-dialog {
+  top: 100px;
+  left: 200px;
+}
+
+/* line 41, ../../app/styles/_modal.scss */
+.ng-modal-dialog-content {
+  padding: 10px;
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+
+/* line 48, ../../app/styles/_modal.scss */
+.ng-modal-close {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 100%;
+  display: inline-block;
+  font-weight: bold;
+  color: #ff4800;
+}
+
+/* line 1, ../../app/styles/_video.scss */
+.video {
+  position: relative;
+  display: block;
+  margin: 0 0 5px 0;
+  vertical-align: middle;
+  max-width: 140px;
+  height: 140px;
+  background: #e5e5e5;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-animation-name: popIn;
+  -moz-animation-name: popIn;
+  -o-animation-name: popIn;
+  animation-name: popIn;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+/* line 23, ../../app/styles/_video.scss */
+.video img {
+  padding: 10px 10px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* line 29, ../../app/styles/_video.scss */
+.video:hover img {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+/* line 37, ../../app/styles/_video.scss */
+.video span {
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 5px;
+  width: 126px;
+  max-height: 90px;
+  padding: 5px 5px;
+  margin: 30px 0 0 0;
+  background-color: rgba(239, 28, 24, 0.7);
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-stretch: condensed;
+  font-size: 16px;
+  overflow: hidden;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 90%;
+  word-wrap: break-word;
+}
+
+/* line 1, ../../app/styles/_app.scss */
+body {
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  background: url("../images/background-pattern.png");
+  background-repeat: repeat;
+  font-family: "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosCnRegular', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
+  font-weight: 400;
+  font-stretch: condensed;
+}
+
+/* line 11, ../../app/styles/_app.scss */
+.similar {
+  cursor: pointer;
+}
+
+/* line 16, ../../app/styles/_app.scss */
+.suggested,
+.playlist {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 1000px;
+}
+
+/* line 22, ../../app/styles/_app.scss */
+#player {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: 0 0 1em 0;
+  display: block;
+}
+
+/* line 30, ../../app/styles/_app.scss */
+.similar {
+  text-decoration: none;
+  color: black;
+  padding: 3px 0px;
+  margin: 0 3px;
+  line-height: 180%;
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: #E5E5E5;
+  cursor: pointer;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+/* line 49, ../../app/styles/_app.scss */
+.similar:hover {
+  color: white;
+  background-color: black;
+}
+
+/* line 54, ../../app/styles/_app.scss */
+.suggested, .stage, .playlist {
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/*  responsivity based on player dimensions: 
+    320x240, 480x360, 640x480, 853x480, 960x720
+*/
+/* line 66, ../../app/styles/_app.scss */
+.suggested,
+.playlist {
+  width: 140px;
+}
+
+@media only screen and (min-width: 1338px) {
+  /* line 69, ../../app/styles/_app.scss */
+  .stage {
+    width: 873px;
+  }
+
+  /* line 70, ../../app/styles/_app.scss */
+  #player {
+    width: 853px;
+    height: 480px;
+  }
+}
+@media only screen and (min-width: 1113px) and (max-width: 1338px) {
+  /* line 74, ../../app/styles/_app.scss */
+  .stage {
+    width: 660px;
+  }
+
+  /* line 75, ../../app/styles/_app.scss */
+  #player {
+    width: 640px;
+    height: 480px;
+  }
+}
+@media only screen and (min-width: 1081px) and (max-width: 1112px) {
+  /* line 79, ../../app/styles/_app.scss */
+  .stage {
+    width: 660px;
+  }
+
+  /* line 80, ../../app/styles/_app.scss */
+  #player {
+    width: 640px;
+    height: 480px;
+  }
+}
+@media only screen and (min-width: 913px) and (max-width: 1080px) {
+  /* line 84, ../../app/styles/_app.scss */
+  .stage {
+    width: 500px;
+  }
+
+  /* line 85, ../../app/styles/_app.scss */
+  #player {
+    width: 480px;
+    height: 360px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 912px) {
+  /* line 89, ../../app/styles/_app.scss */
+  .stage {
+    width: 340px;
+  }
+
+  /* line 90, ../../app/styles/_app.scss */
+  #player {
+    width: 320px;
+    height: 240px;
+  }
+}
+/*==================
+    DEBUG
+=====================*/
+/* line 20, ../../app/styles/main.scss */
+.container {
+  margin: 1px solid #e7e7e7;
+  background-color: transparent;
+}
+
+/* line 25, ../../app/styles/main.scss */
+.container .row {
+  margin-top: 1em;
+}
+
+/* line 29, ../../app/styles/main.scss */
+[class^="col"] {
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transform: all 0.2s ease-out;
+}
+
+/* line 36, ../../app/styles/main.scss */
+input[type=text].search {
+  line-height: 32px;
+  width: 320px;
+  margin: 0 0 0 145px;
+  display: block;
+}
+
+/* line 43, ../../app/styles/main.scss */
+.header .nav li {
+  float: left;
+  display: inline-block;
+  margin: 0 10px;
+  list-style-type: none;
+}
+
+/* line 49, ../../app/styles/main.scss */
+.header .nav li a {
+  text-decoration: none;
+}
+
+/*---------------------------
+    hotfix
+---------------------------*/
